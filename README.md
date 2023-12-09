@@ -1,4 +1,4 @@
-## Payment UI Component
+# Payment UI Component
 
 ### This project was built to practice more on form vailidation using Javascript
 
