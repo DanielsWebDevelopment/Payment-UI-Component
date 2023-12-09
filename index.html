@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Payment Ui</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+          <div class="payment_info" class="card_number">
+              <label>Card Number</label>
+              <input type="text" name="number" id="number" placeholder="+ 1234 3456 5678 2345">
+              <div id="card-error" class="error"></div>
+          </div>
+          <div class="flex_cards">
+            <div class="payment_info">
+              <label>Exp. Date</label>
+              <input type="text" name="date" id="date" placeholder="03/24">
+              <div id="date-error" class="error"></div>
+            </div>
+            <div class="payment_info">
+              <label>CVV</label>
+              <input type="text" name="cvv" id="CV" placeholder="456">
+              <div id="cvv-error" class="error"></div>
+            </div>
+           </div>
+            <div class="payment_info">
+              <select name="phone">
+                <option value="area-code">+1</option>
+              </select>
+              <input type="phone" name="phone" id="phone" placeholder="+ 123 456 5678">
+              <div id="phone-error" class="error"></div>
+            </div>
+          
+          <div class="payment_cta">
+            <button type="submit" class="submit">Pay Now</button>
+          </div>
+          </div>
+        </div>
+      </main>
+
+      <script src="index.js"></script>
+</body>
+</html>

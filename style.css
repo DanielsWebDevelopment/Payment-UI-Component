@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #000466 60%, #0A0A0A 80%);
+  }
+  
+  .container {
+    display: grid;
+    max-width: 420px;
+    min-height: 350px;
+    background-color: #fefefe;
+    -webkit-box-shadow: 5px 5px 21px 27px #000466; 
+    box-shadow: 5px 5px 21px 27px #000466;
+    padding: 30px 60px;
+    border-radius: 8px;
+    transition: box-shadow 0.4s;
+    overflow: hidden;
+    transition: transform 0.4s;
+  }
+  
+  @media screen and (min-width: 400px){
+    .container {
+      padding: 30px;
+      max-width: 350px;
+    }
+  }
+  
+  .container:hover {
+    box-shadow: 0px 3px 24px rgba(0,0,0,0.1);
+  }
+  
+  .flex_cards {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .payment_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .payment_info input {
+    margin-top: 10px;
+  }
+  
+  .payment_info label {
+    margin-bottom: 10px;
+  }
+  
+  #CV {
+    width: 80px;
+  }
+  
+  input {
+    height: 30px;
+    width: 97%;
+    outline: none;
+    border: none;
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-shadow: 3px 5px 24px rgba(0,0,0,0.2);
+  }
+  
+  label {
+    color: #7A7A7A;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  
+  .payment_cta button {
+    height: 40px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    border: 1px solid #ddd;
+    background-color: #11BEFF;
+    box-shadow: 3px 5px 24px rgba(0,0,0,0.3);
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+  }
+  
+  .payment_cta button:hover {
+    border: 1px solid #333;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .error {
+    background-color: #FBCECE;
+    padding: 0 5px;
+  }
+  
+  #card-error {
+    margin-top: 7px;
+  }
+  
+  #date-error {
+    margin-top: 7px;
+  
+  }
+  
+  #cvv-error {
+    margin-top: 7px;
+  }
+  
+  #phone-error {
+    margin-top: 7px;
+  }
+  
+  .submit {
+    margin-top: 15px;
+    background-color: #FBCECE;
+    padding: 5px;
+  }
